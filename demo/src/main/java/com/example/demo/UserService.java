@@ -10,10 +10,11 @@ public class UserService {
     private UserRepository userRepository;
 
     public void register(User user) {
-        // Perform any additional validation or business logic here
+        // Wykonaj ewentualną dodatkową walidację lub logikę biznesową
 
-        // Save the user to the database
+        // Zapisz użytkownika w bazie danych
         userRepository.save(user);
     }
 }
+
 
