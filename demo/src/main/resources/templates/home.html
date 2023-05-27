@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<html lang="pl">
 <head>
-    <title>Spring Security Example</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J-SOK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdb38ea891.js" crossorigin="anonymous"></script>
+    <link th:href="@{/styles/style.css}" rel="stylesheet" />
 </head>
 <body>
-<h1>Welcome!</h1>
+<nav class="wrapper">
+    <button class="burger-icon"><i class="fas fa-bars"></i></button>
+    <div class="nav-items">
 
-<p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+    </div>
+</nav>
+<header class="hdr">
+    <div class="img-big"></div>
+    <div class="img-txt">
+        <h1>J-<span>Sok</span></h1>
+        <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+        <p>Jednolity System Obsługi Konfidentów</p>
+
+
+    </div>
+
+
+</header>
+<main>
+
+    <!-- <section class="abuot-us-wrapper" id="about-us">
+        <h2 class="section-title">o nas</h2>
+        <p class="about-us-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ex iste quidem, mollitia repellendus maxime voluptates est eveniet veritatis excepturi placeat provident deserunt molestias sapiente recusandae dolore aut nobis consequatur.</p>
+        <p class="about-us-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam enim delectus aut iste nam ea quos reprehenderit exercitationem animi.</p>
+    </section> -->
+
+    <!-- <section class="products wrapper" id="products-wrapper"> -->
+    <!-- <h2 class="section-title">produkty</h2> -->
+    <!-- <div class="product first-product">
+        <div class="img-big"></div>
+        <div class="img-txt">
+            <h3>JO NIE CHIOL </h3>
+            <p>JO NIE WIEDZIOL</p>
+        </div>
+    </div> -->
+    <!-- <div class="product second-product">
+        <div class="img-big"></div>
+        <div class="img-txt">
+            <h3>przyjazne dzieciom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    </div>
+                <div class="product third-product">
+            <div class="img-big"></div>
+            <div class="img-txt">
+                <h3>przyjazne dzieciom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+    </div> -->
+    <!-- <div class="product fourth-product">
+        <div class="img-big"></div>
+        <div class="img-txt">
+            <h3>przyjazne dzieciom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+  </div> -->
+
+
+    <!-- </section> -->
+    <!-- <section class="contact wrapper"id ="contact wrapper">
+        <h2 class="section-title">kontakt</h2>
+        <p><i class="fas fa-phone"></i>668999700</p>
+        <p><i class="fas fa-at"></i>mswagrzyk@interia.pl</p>
+        <h3>Adres</h3>
+        <p>Wroclaw</p>
+    </section> -->
+</main>
+<footer>
+    <p>&copy; 2023 Telekoxy</p>
+</footer>
 </body>
 </html>
