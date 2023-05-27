@@ -13,7 +13,7 @@ public class MessageController
     @Autowired
     private DatabaseRepository repo;
 
-    @PostMapping("/ticket")
+    @PostMapping("/pp")
     public @ResponseBody String addNewMessage (@RequestParam String message, @RequestParam String type, @RequestParam String Destination, @RequestParam Integer Prio)
     {
         Message m = new Message();
