@@ -1,11 +1,9 @@
-
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function App() {
-
-   const [ticketData, setTicketData] = useState(null);
+  const [ticketData, setTicketData] = useState(null);
 
   useEffect(() => {
     handleSummonerSearch();
@@ -21,34 +19,35 @@ function App() {
   };
 
   return (
-    <div>
-      {ticketData && (
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Message</th>
-              <th>Type</th>
-              <th>Destination</th>
-              <th>Prio</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ticketData.map((ticket) => (
-              <tr key={ticket.id}>
-                <td>{ticket.id}</td>
-                <td>{ticket.message}</td>
-                <td>{ticket.type}</td>
-                <td>{ticket.destination}</td>
-                <td>{ticket.prio}</td>
+    <div className="App">
+      <div className="table-container">
+        {ticketData && (
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Message</th>
+                <th>Type</th>
+                <th>Destination</th>
+                <th>Prio</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
+            </thead>
+            <tbody>
+              {ticketData.map((ticket) => (
+                <tr key={ticket.id}>
+                  <td>{ticket.id}</td>
+                  <td>{ticket.message}</td>
+                  <td>{ticket.type}</td>
+                  <td>{ticket.destination}</td>
+                  <td>{ticket.prio}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
     </div>
   );
 }
-
 
 export default App;
