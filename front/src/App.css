@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  height: 60px;
+  line-height: 60px;
+  background-color: #ddd;
+  text-align: center;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+}
+
+.burger-icon {
+  display: block;
+  margin-left: auto;
+  padding: 0 30px;
+  line-height: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: none;
+}
+
+.hdr {
+  position: relative;
+  height: 300px;
+  background-image: url('./milicja.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+}
+
+.img-big {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ddd;
+}
+
+.img-txt h1 {
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 5px #000;
+  color: #ddd;
+}
+
+.img-txt span {
+  text-transform: uppercase;
+  color: #09f;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products {
+  margin: 60px auto;
+}
+
+.product {
+  position: relative;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  margin: 20px 0 5px;
+}
+
+footer {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .nav-items a {
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .nav-items a:hover {
+    color: #09f;
+  }
+
+  .hdr {
+    position: relative;
+    height: 450px;
+    background-image: url('./milicja.jpg');
+  }
+
+  .img-txt h1 {
+    font-size: 36px;
+  }
+
+  /* .img-txt p {
+    font-size: 18px;
+  } */
+
+  /* .products h3 {
+    font-size: 24px;
+  } */
+}
+
+@media (min-width: 1200px) {
+  .img-txt h1 {
+    font-size: 42px;
+  }
+
+  .img-txt p {
+    font-size: 20px;
+  }
+}
