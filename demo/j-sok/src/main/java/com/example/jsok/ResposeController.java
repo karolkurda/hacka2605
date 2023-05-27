@@ -10,6 +10,7 @@ import retrofit2.http.Path;
 
 @Controller
 @RequestMapping("/response")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ResposeController
 {
     @Autowired
