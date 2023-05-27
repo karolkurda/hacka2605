@@ -6,9 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
-import retrofit2.http.Path;
+
 
 @Controller
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/response")
 public class ResposeController
 {
